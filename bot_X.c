@@ -10,12 +10,12 @@ void debug(char *message) {
   fprintf(stderr, "%s\n", message);
 }
 
-typedef struct{ // cada carda tem um número e um naipe
+typedef struct{ // cada carta tem um número e um naipe
 	char numberCard;
 	char *suitCard; // o naipe é string
 }card;
 
-typedef struct{ // cada mão tem um numero de cartas e as 2 informações de cada carta
+typedef struct{ // cada mão tem um número de cartas e as 2 informações de cada carta
 	int nCards;
 	card *playerCards;
 }hand;
@@ -51,15 +51,6 @@ player players_setup(char *string){
 
 
 hand hand_setup(char *string){
-	hand array;
-	card i;
-	char *substring;
-	int length, j = 0;
-
-	substring = strtok(string, " ");
-	while(substring != NULL){
-		strcpy()
-	}
 
 }
 
